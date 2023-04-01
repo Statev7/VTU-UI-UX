@@ -1,0 +1,203 @@
+@media  (max-width: 1400px) {
+    #portfolio .projects {
+        justify-content: space-between;
+    }
+
+    #portfolio .projects .project {
+        flex: 0 0 30%;
+    }
+}
+
+/* 1000 - 1200 */
+
+@media  (max-width: 1200px){
+    section {
+        padding: 10px 50px;
+        margin-bottom: 20px;
+    }
+    section .section-title {
+        font-size: 36px;
+        letter-spacing: 1px;
+    }
+
+    #portfolio .projects {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 25px
+    }
+    #portfolio .projects .project {
+        flex-direction: row;
+    }
+}
+
+/* 800 - 1000 */
+
+@media  (max-width: 1000px){
+    header {
+        padding: 20px 50px;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    #logo-container {
+        display: none;
+    }
+    #navigation .nav-item {
+        font-size: 18px;
+    }
+}
+
+/* About me */
+
+@media  (max-width: 1000px){
+    #about-me {
+        background-position: top left;
+    }
+    
+    #about-me .content {
+        flex-direction: column;
+    }
+    
+    #about-me .content .personal-information {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #about-me .content .personal-information h1{
+        font-size: 38px;
+    }
+
+    #about-me .content .personal-information p {
+        font-size: 18px;
+    }
+
+    #about-me .content .personal-image-container {
+        display: none;
+    }
+    
+    #about-me .content .hire-me-btn {
+        width: 45%;
+    }
+}
+
+/* Tech-Stack */
+
+@media  (max-width: 1000px) {
+    #tech-stack .categories {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #tech-stack .categories .category ul li {
+        font-size: 22px;
+    }
+}
+
+/* Footer */
+@media  (max-width: 1000px) {
+    #footer .content {
+        padding: 175px 25px 50px 25px;
+    }
+
+    #footer .content h4{
+        display: none;
+    }
+
+    #footer .content .contacts {
+        gap: 6px;
+    }
+
+    #footer .content .contacts ul {
+        flex-direction: row;
+    }
+
+    #footer .content .contacts ul li a span {
+        display: none;
+    }
+
+    #footer .content .contacts ul li i {
+        font-size: 28px;
+    }
+}
+
+/* 800 - 1000 */
+
+@media  (max-width: 800px) {
+    /* Portofolio */
+
+    #portfolio .projects {
+        flex-direction: column;
+        max-width: 550px;
+        gap: 30px;
+
+        margin: 0 auto;
+    }
+
+    #portfolio .projects .project {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #portfolio .projects .project .meta-information {
+        gap: 10px;
+    
+        padding: 10px 14px;
+    }
+
+    #portfolio .projects .project .title {
+        font-size: 26px;
+    }
+
+    #portfolio .projects .project .description {
+        font-size: 18px;
+    }
+}
+
+/* 0 - 600 */
+
+@media (max-width: 600px) {
+
+    /* About me */
+
+    #about-me .content .personal-information {
+        text-align: center;
+    }
+
+    /* Portfolio */
+
+    #portfolio .projects {
+        flex-direction: column;
+        max-width: 400px;
+        gap: 30px;
+
+        margin: 0 auto;
+    }
+
+    /* Footer */
+
+    #footer .content {
+        padding: 75px 25px;
+        flex-direction: column;
+        gap: 32px;
+        font-size: 20px;
+    }
+
+    #footer .content h4{
+        display: none;
+    }
+
+    #footer .content .contacts {
+        gap: 6px;
+    }
+
+    #footer .content .contacts ul {
+        flex-direction: row;
+    }
+
+    #footer .content .contacts ul li a span {
+        display: none;
+    }
+
+    #footer .content .contacts ul li i {
+        font-size: 28px;
+    }
+}
