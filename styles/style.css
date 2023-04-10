@@ -81,6 +81,8 @@ header {
     align-items: center;
     justify-content: space-between;
 
+    position: sticky;
+    top: 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 75px;
     background-color: white;
