@@ -153,14 +153,12 @@ header {
     color: white;
 }
 
-/* Portfolio */
+#about-me .content .hire-me-btn a {
+    text-decoration: none;
+    color: white;
+}
 
-/* #portfolio {
-    background-image: url('/Images/portfolio-bg.jpeg');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-} */
+/* Portfolio */
 
 #portfolio .projects {
     display: flex;
