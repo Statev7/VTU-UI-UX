@@ -8,9 +8,9 @@
     }
 }
 
-/* 1000 - 1200 */
+/* 1000 - 1300 */
 
-@media  (max-width: 1200px){
+@media  (max-width: 1300px){
     section {
         padding: 10px 50px;
         margin-bottom: 20px;
@@ -21,12 +21,9 @@
     }
 
     #portfolio .projects {
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 30px;
         margin-bottom: 25px
-    }
-    #portfolio .projects .project {
-        flex-direction: row;
     }
 }
 
@@ -55,6 +52,7 @@
     
     #about-me .content {
         flex-direction: column;
+        padding: 0px 40px;
     }
     
     #about-me .content .personal-information {
@@ -74,9 +72,6 @@
         display: none;
     }
     
-    #about-me .content .hire-me-btn {
-        width: 45%;
-    }
 }
 
 /* Tech-Stack */
@@ -119,14 +114,14 @@
     }
 }
 
+
 /* 800 - 1000 */
 
-@media  (max-width: 800px) {
+@media  (max-width: 900px) {
     /* Portofolio */
 
     #portfolio .projects {
-        flex-direction: column;
-        max-width: 550px;
+        flex-wrap: wrap;
         gap: 30px;
 
         margin: 0 auto;
@@ -134,6 +129,7 @@
 
     #portfolio .projects .project {
         flex-direction: column;
+        flex: 0 0 45%;
         gap: 8px;
     }
 
@@ -154,7 +150,7 @@
 
 /* 0 - 600 */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     header {
         padding: 20px 20px;
@@ -166,11 +162,15 @@
         text-align: center;
     }
 
+    #about-me .content .hire-me-btn {
+        width: 50%;
+    }
+
     /* Portfolio */
 
     #portfolio .projects {
         flex-direction: column;
-        max-width: 400px;
+        max-width: 350px;
         gap: 30px;
 
         margin: 0 auto;
