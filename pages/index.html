@@ -20,6 +20,40 @@
 
 <body>
 
+    <audio id="about-me-anchor" src="/audio/about-me-anchor.mp3"></audio>
+    <audio id="portfolio-anchor" src="/audio/portfolio-anchor.mp3"></audio>
+    <audio id="tech-stack-anchor" src="/audio/tech-stack-anchor.mp3"></audio>
+    <audio id="contacts-anchor" src="/audio/contacts-anchor.mp3"></audio>
+    <audio id="about-me-heading" src="/audio/about-me-heading.mp3"></audio>
+    <audio id="about-me-firstp" src="/audio/about-me-firstp.mp3"></audio>
+    <audio id="about-me-secondp" src="/audio/about-me-secondp.mp3"></audio>
+    <audio id="hire-me" src="/audio/hire-me.mp3"></audio>
+    <audio id="projects-heading" src="/audio/projects-heading.mp3"></audio>
+    <audio id="student-system-heading" src="/audio/student-system-heading.mp3"></audio>
+    <audio id="student-system-desc" src="/audio/student-system-desc.mp3"></audio>
+    <audio id="go-to-project" src="/audio/go-to-project.mp3"></audio>
+    <audio id="soccer-api-heading" src="/audio/soccer-api-heading.mp3"></audio>
+    <audio id="soccer-api-desc" src="/audio/soccer-api-desc.mp3"></audio>
+    <audio id="library-heading" src="/audio/library-heading.mp3"></audio>
+    <audio id="library-desc" src="/audio/library-desc.mp3"></audio>
+    <audio id="back-end" src="/audio/back-end.mp3"></audio>
+    <audio id="csharp" src="/audio/csharp.mp3"></audio>
+    <audio id="java" src="/audio/java.mp3"></audio>
+    <audio id="front-end" src="/audio/front-end.mp3"></audio>
+    <audio id="java-script" src="/audio/javascript.mp3"></audio>
+    <audio id="html" src="/audio/html.mp3"></audio>
+    <audio id="css" src="/audio/css.mp3"></audio>
+    <audio id="bootstrap" src="/audio/bootstrap.mp3"></audio>
+    <audio id="tools" src="/audio/tools.mp3"></audio>
+    <audio id="postman" src="/audio/postman.mp3"></audio>
+    <audio id="visual-studio" src="/audio/vs.mp3"></audio>
+    <audio id="visual-studio-code" src="/audio/vsc.mp3"></audio>
+    <audio id="contacts-title" src="/audio/contacts.mp3"></audio>
+    <audio id="linkedIn" src="/audio/linkedIn.mp3"></audio>
+    <audio id="email" src="/audio/email.mp3"></audio>
+    <audio id="phone" src="/audio/phone.mp3"></audio>
+    <audio id="top-btn" src="/audio/top-btn.mp3"></audio>
+
     <header>
         <div id="logo-container">
             <img src="/Images/logo.png" alt="Logo">
@@ -28,16 +62,16 @@
         <nav id="navigation">
             <ul role="list">
                 <li class="nav-item">
-                    <a href="#about-me">About me</a>
+                    <a onmouseover="playAudio('about-me-anchor')" href="#about-me">About me</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#portfolio">Portfolio</a>
+                    <a onmouseover="playAudio('portfolio-anchor')" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#tech-stack">Tech stack</a>
+                    <a onmouseover="playAudio('tech-stack-anchor')" href="#tech-stack">Tech stack</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#footer">Contacts</a>
+                    <a onmouseover="playAudio('contacts-anchor')" href="#footer">Contacts</a>
                 </li>
             </ul>
         </nav>
@@ -50,19 +84,19 @@
 
             <article class="personal-information">
 
-                <h1>My name is <b>Petyo</b></h1>
+                <h1 onmouseover="playAudio('about-me-heading')" onmouseleave="stopAudio('about-me-heading')">My name is <b>Petyo</b></h1>
 
-                <p>
+                <p onmouseover="playAudio('about-me-firstp')" onmouseleave="stopAudio('about-me-firstp')">
                     3rd-year computer science student. Former part-time assistant in object-oriented programming. My
                     goal is to develop in the IT industry and learn new technologies.
                 </p>
 
-                <p>
-                    Completed the C# track at softuni. I am interested in design patterns, data structures and clean
+                <p onmouseover="playAudio('about-me-secondp')" onmouseleave="stopAudio('about-me-secondp')">
+                    Completed the C# track at Softuni. I am interested in design patterns, data structures and clean
                     architecture.
                 </p>
 
-                <button class="hire-me-btn btn">
+                <button onmouseover="playAudio('hire-me')" onmouseleave="stopAudio('hire-me')" class="hire-me-btn btn">
                     <a href="https://www.linkedin.com/in/petyo-statev-85864722b/" target="_blank">Hire Me</a>
                 </button>
 
@@ -76,7 +110,7 @@
     </section>
 
     <section id="portfolio">
-        <h2 class="section-title">Projects</h2>
+        <h2 onmouseover="playAudio('projects-heading')" onmouseleave="stopAudio('projects-heading')" class="section-title">Projects</h2>
 
         <div class="projects">
 
@@ -87,13 +121,13 @@
                 </div>
 
                 <div class="meta-information">
-                    <h3 class="title">Student System</h3>
+                    <h3 onmouseover="playAudio('student-system-heading')" onmouseleave="stopAudio('student-system-heading')" class="title">Student System</h3>
 
-                    <p class="description">
+                    <p onmouseover="playAudio('student-system-desc')" onmouseleave="stopAudio('student-system-desc')" class="description">
                         Course web application made using ASP.NET CORE 5.
                     </p>
 
-                    <a class="github-btn btn" href="https://github.com/Statev7/StudentSystem" target="_blank">
+                    <a onmouseover="playAudio('go-to-project')" onmouseleave="stopAudio('go-to-project')" class="github-btn btn" href="https://github.com/Statev7/StudentSystem" target="_blank">
                         <i class="fas fa-link link-icon"></i> Go to project
                     </a>
                 </div>
@@ -107,13 +141,13 @@
                 </div>
 
                 <div class="meta-information">
-                    <h3 class="title">Soccer API</h3>
+                    <h3 onmouseover="playAudio('soccer-api-heading')" onmouseleave="stopAudio('soccer-api-heading')" class="title">Soccer API</h3>
 
-                    <p class="description">
+                    <p onmouseover="playAudio('soccer-api-desc')" onmouseleave="stopAudio('soccer-api-desc')" class="description">
                         Web application for the API discipline, made using ASP.NET CORE 5.
                     </p>
 
-                    <a class="github-btn btn" href="https://github.com/Statev7/SoccerAPI" target="_blank">
+                    <a onmouseover="playAudio('go-to-project')" onmouseleave="stopAudio('go-to-project')" class="github-btn btn" href="https://github.com/Statev7/SoccerAPI" target="_blank">
                         <i class="fas fa-link link-icon"></i> Go to project
                     </a>
                 </div>
@@ -127,13 +161,13 @@
                 </div>
 
                 <div class="meta-information">
-                    <h3 class="title">Library</h3>
+                    <h3 onmouseover="playAudio('library-heading')" onmouseleave="stopAudio('library-heading')" class="title">Library</h3>
 
-                    <p class="description">
+                    <p onmouseover="playAudio('library-desc')" onmouseleave="stopAudio('library-desc')" class="description">
                         A console application that is built using different design patterns.
                     </p>
 
-                    <a class="github-btn btn" href="https://github.com/Statev7/VTU-Design-Patterns" target="_blank">
+                    <a onmouseover="playAudio('go-to-project')" onmouseleave="stopAudio('go-to-project')" class="github-btn btn" href="https://github.com/Statev7/VTU-Design-Patterns" target="_blank">
                         <i class="fas fa-link link-icon"></i> Go to project
                     </a>
                 </div>
@@ -144,50 +178,50 @@
     </section>
 
     <section id="tech-stack">
-        <h2 class="section-title">Tech Stack</h2>
+        <h2 onmouseover="playAudio('tech-stack-anchor')" onmouseleave="stopAudio('tech-stack-anchor')" class="section-title">Tech Stack</h2>
 
         <div class="categories">
 
             <article class="category">
-                <h3 class="title">Back-End Web</h3>
+                <h3 onmouseover="playAudio('back-end')" onmouseleave="stopAudio('back-end')" class="title">Back-End Web</h3>
                 <ul role="list">
-                    <li>
+                    <li onmouseover="playAudio('csharp')" onmouseleave="stopAudio('csharp')">
                         <img class="tech-stack-icon" src="/Images/Tech-Icons/csharp.png"> CSharp
                     </li>
-                    <li>
+                    <li onmouseover="playAudio('java')" onmouseleave="stopAudio('java')">
                         <img class="tech-stack-icon" src="/Images/Tech-Icons/java.png"> Java
                     </li>
                 </ul>
             </article>
 
             <article class="category">
-                <h3 class="title">Front-End Web</h3>
+                <h3 onmouseover="playAudio('front-end')" onmouseleave="stopAudio('front-end')" class="title">Front-End Web</h3>
                 <ul role="list">
-                    <li>
+                    <li onmouseover="playAudio('java-script')" onmouseleave="stopAudio('java-script')">
                         <img class="tech-stack-icon" src="/Images/Tech-Icons/java-script.png"> Java Script
                     </li>
-                    <li>
+                    <li onmouseover="playAudio('html')" onmouseleave="stopAudio('html')">
                         <img class="tech-stack-icon" src="/Images/Tech-Icons/html.png"> HTML5
                     </li>
-                    <li>
+                    <li onmouseover="playAudio('css')" onmouseleave="stopAudio('css')">
                         <img class="tech-stack-icon" src="/Images/Tech-Icons/css.png"> CSS
                     </li>
-                    <li>
-                        <img class="tech-stack-icon" src="/Images/Tech-Icons/boostrap.png"> Boostrap
+                    <li onmouseover="playAudio('bootstrap')" onmouseleave="stopAudio('bootstrap')">
+                        <img class="tech-stack-icon" src="/Images/Tech-Icons/boostrap.png"> Bootstrap
                     </li>
                 </ul>
             </article>
 
             <article class="category">
-                <h3 class="title">Tools</h3>
+                <h3 onmouseover="playAudio('tools')" onmouseleave="stopAudio('tools')" class="title">Tools</h3>
                 <ul role="list">
-                    <li>
+                    <li onmouseover="playAudio('postman')" onmouseleave="stopAudio('postman')">
                         <img class="tech-stack-icon" src="/Images/Tech-Icons/postman.png"> Postman
                     </li>
-                    <li>
+                    <li onmouseover="playAudio('visual-studio')" onmouseleave="stopAudio('visual-studio')">
                         <img class="tech-stack-icon" src="/Images/Tech-Icons/visual-studio.png"> Visual Studio 2022
                     </li>
-                    <li>
+                    <li onmouseover="playAudio('visual-studio-code')" onmouseleave="stopAudio('visual-studio-code')">
                         <img class="tech-stack-icon" src="/Images/Tech-Icons/visual-studio-code.png"> Visual Studio Code
                     </li>
                 </ul>
@@ -204,20 +238,20 @@
             <h4>CV</h4>
 
             <div class="contacts">
-                <h5>Contacts</h5>
+                <h5 onmouseover="playAudio('contacts-title')" onmouseleave="stopAudio('contacts-title')">Contacts</h5>
 
                 <ul role="list">
-                    <li>
+                    <li onmouseover="playAudio('linkedIn')" onmouseleave="stopAudio('linkedIn')">
                         <a href="https://www.linkedin.com/in/petyo-statev-85864722b/" target="_blank">
                             <i class="fab fa-linkedin"></i> <span>Petyo Statev</span>
                         </a>
                     </li>
-                    <li>
+                    <li onmouseover="playAudio('email')" onmouseleave="stopAudio('email')">
                         <a href="mailto:petiostatev2703@gmail.com">
                             <i class="fas fa-envelope"></i> <span>petiostatev2703@gmail.com</span>
                         </a>
                     </li>
-                    <li>
+                    <li onmouseover="playAudio('phone')" onmouseleave="stopAudio('phone')">
                         <a href="+359 7878787">
                             <i class="fas fa-phone fa-rotate-90"></i> <span>+359 7878787</span>
                         </a>
@@ -228,13 +262,13 @@
 
             <nav>
                 <ul role="list">
-                    <li>
+                    <li onmouseover="playAudio('about-me-anchor')" onmouseleave="stopAudio('about-me-anchor')">
                         <a href="#about-me">About me</a>
                     </li>
-                    <li>
+                    <li onmouseover="playAudio('portfolio-anchor')" onmouseleave="stopAudio('portfolio-anchor')">
                         <a href="#portfolio">Portfolio</a>
                     </li>
-                    <li>
+                    <li onmouseover="playAudio('tech-stack-anchor')" onmouseleave="stopAudio('tech-stack-anchor')">
                         <a href="#tech-stack">Tech stack</a>
                     </li>
                 </ul>
@@ -244,8 +278,9 @@
 
     </footer>
 
-    <button id="go-top-btn" title="Go to top">Top</button>
+    <button id="go-top-btn" onmouseover="playAudio('top-btn')" onmouseleave="stopAudio('top-btn')" title="Go to top">Top</button>
 
+    <script src="/scripts/main.js"></script>
     <script src="/scripts/btn.js"></script>
 </body>
 
